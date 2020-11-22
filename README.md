@@ -7,4 +7,6 @@ With such converter it is quite easily to navigate in XML:
 There is some special names:
 - #text - the text value of current node
 - #xmlns - the namespace of current node
+- #name - the local name of current node
 
+Example is shown in corresponding Java or Python source.
