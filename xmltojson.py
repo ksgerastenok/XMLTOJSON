@@ -42,9 +42,7 @@ def parse(element):
                 result["%" + "xmlns"] += str(xml.QName(element[0]).namespace).strip()
     if((type(element) != type(tuple()))):
         for item in element.getchildren():
-            if((not(result.has_key(
-
-"#" + xml.QName(item.tag).text)))):
+            if((not(result.has_key("#" + xml.QName(item.tag).text)))):
                 result["#" + xml.QName(item.tag).text] = list()
             if((type(item) != type(None))):
                 result["#" + xml.QName(item.tag).text].append(parse(item))
